@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1055FF</color>
+    <color name="warna_button">#ba2929</color>
+    <color name="warna_bacground">#D3F5F6</color>
+    <color name="brown">#CF592121</color>
+</resources>
