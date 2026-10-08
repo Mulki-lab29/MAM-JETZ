@@ -1,206 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FAFC"
-    android:fillViewport="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".sipeka.DashboardActivity">
 
+    <!-- Header Profil -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-        <!-- Header -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ShapeableImageView" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Halo, Pemanen 👋"
-                    android:textColor="#0F172A"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="SIPEKA - Smart Payroll System"
-                    android:textColor="#64748B"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@android:drawable/ic_menu_myplaces"
-                app:tint="#15803D" />
-        </RelativeLayout>
-
-        <!-- Card Total Premi -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:cardBackgroundColor="#15803D"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rincian Premi Pemanen"
-                    android:textColor="#DCFCE7"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/tvTotalPremi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Rp 3.570.000"
-                    android:textColor="#FFFFFF"
-                    android:textSize="28sp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="#33FFFFFF" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Total Hasil Panen"
-                            android:textColor="#BBF7D0"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="10.000,00 Kg"
-                            android:textColor="#FFFFFF"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Status Pembayaran"
-                            android:textColor="#BBF7D0"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="Terverifikasi"
-                            android:textColor="#FFFFFF"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Menu Utama Text -->
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Menu Utama"
-            android:textColor="#0F172A"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
 
-        <!-- Grid Menu Tombol -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, Welcome Back"
+                android:textColor="#64748B"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulki Ahmad M"
+                android:textColor="#1E293B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Card Total Estimasi Premi -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#EFF6FF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
 
-            <!-- Tombol 1: Input Data Panen -->
-            <Button
-                android:id="@+id/btnMenuInputPanen"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:backgroundTint="#15803D"
-                android:text="Input Data Hasil Panen"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:cornerRadius="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Estimasi Premi"
+                android:textColor="#2563EB"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
-            <!-- Tombol 2: Riwayat Premi -->
-            <Button
-                android:id="@+id/btnMenuRiwayat"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="12dp"
-                android:backgroundTint="#0284C7"
-                android:text="Lihat Riwayat Premi"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:cornerRadius="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Rp 3.570.000"
+                android:textColor="#1E293B"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-            <!-- Tombol 3: Profil / Detail Laporan -->
-            <Button
-                android:id="@+id/btnMenuProfil"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="12dp"
-                android:backgroundTint="#475569"
-                android:text="Profil &amp; Akun Pemanen"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:cornerRadius="12dp" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Hasil Panen: 10.000 Kg • Terverifikasi"
+                android:textColor="#64748B"
+                android:textSize="12sp" />
         </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-    </LinearLayout>
-</ScrollView>
+    <!-- Title Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:text="Layanan Pemanen"
+        android:textColor="#1E293B"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Button 1: Input Data Hasil Panen dengan Vector Asset -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMenuInputPanen"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#2563EB"
+        android:text="Input Data Hasil Panen"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_add_24"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="#FFFFFF" />
+
+    <!-- Button 2: Lihat Riwayat Premi dengan Vector Asset -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMenuRiwayat"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0284C7"
+        android:text="Lihat Riwayat Premi"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/outline_history_24"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="#FFFFFF" />
+
+    <!-- Button 3: Profil & Akun Pemanen dengan Vector Asset -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMenuProfil"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:backgroundTint="#475569"
+        android:text="Profil &amp; Akun Pemanen"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/outline_account_circle_24"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="#FFFFFF" />
+
+</LinearLayout>

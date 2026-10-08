@@ -4,25 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FAFC"
+    android:background="#FFFFFF"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".sipeka.ProfileActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="My Profile"
+        android:textColor="#2563EB"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/profile"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Mulki Ahmad M"
-        android:textColor="#0F172A"
-        android:textSize="22sp"
+        android:textColor="#1E293B"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -31,66 +40,59 @@
         android:layout_marginTop="2dp"
         android:text="NIP: PMN-2026-007"
         android:textColor="#64748B"
-        android:textSize="14sp" />
+        android:textSize="13sp" />
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="2dp">
+        android:layout_marginTop="28dp"
+        android:background="#EEF2FF"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:text="Detail Pekerja Kebun"
+            android:textColor="#2563EB"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Detail Pekerja Kebun"
-                android:textColor="#0F172A"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="📍 Lokasi: Kebun Pak Baha (Blok A)"
+            android:textColor="#334155"
+            android:textSize="13sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Lokasi Kebun: Kebun Pak Baha (Blok A)"
-                android:textColor="#334155"
-                android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="🏷️ Status: Pemanen Tetap"
+            android:textColor="#334155"
+            android:textSize="13sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Status: Pemanen Tetap"
-                android:textColor="#334155"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Sistem: SIPEKA Mobile v1.0"
-                android:textColor="#334155"
-                android:textSize="14sp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="📱 Sistem: SIPEKA Mobile v1.0"
+            android:textColor="#334155"
+            android:textSize="13sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="52dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#DC2626"
-        android:text="Keluar / Logout"
+        android:backgroundTint="#EF4444"
+        android:text="Logout"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:textStyle="bold"
-        app:cornerRadius="8dp" />
+        app:cornerRadius="12dp" />
 
 </LinearLayout>

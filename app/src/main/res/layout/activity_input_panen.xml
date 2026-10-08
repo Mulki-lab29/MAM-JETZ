@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FAFC"
+    android:background="#FFFFFF"
     android:fillViewport="true"
     tools:context=".sipeka.InputPanenActivity">
 
@@ -12,82 +12,78 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Form Input Panen"
-            android:textColor="#0F172A"
+            android:text="Input Data Panen"
+            android:textColor="#2563EB"
             android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="Masukkan data hasil panen harian untuk kalkulasi premi."
+            android:layout_marginTop="4dp"
+            android:text="Masukkan data berat panen harian dan kondisi lahan kebun."
             android:textColor="#64748B"
             android:textSize="13sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:orientation="vertical">
+            android:layout_marginTop="28dp"
+            android:text="Berat Hasil Panen (Kg)"
+            android:textColor="#1E293B"
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jumlah / Berat Hasil Panen (Kg)"
-                android:textColor="#334155"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etBeratPanen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Contoh: 3000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#1E293B"
+            android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/etBeratPanen"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@android:drawable/editbox_background"
-                android:hint="Contoh: 3000"
-                android:inputType="numberDecimal"
-                android:padding="12dp"
-                android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kondisi Lahan Kebun"
+            android:textColor="#1E293B"
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Kondisi Lahan Kebun"
-                android:textColor="#334155"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etKondisiLahan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Contoh: Lahan Sulit / Flat"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#1E293B"
+            android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/etKondisiLahan"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@android:drawable/editbox_background"
-                android:hint="Contoh: Lahan Sulit / Flat"
-                android:inputType="text"
-                android:padding="12dp"
-                android:textSize="14sp" />
+        <Button
+            android:id="@+id/btnSimpanPanen"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#2563EB"
+            android:text="Simpan &amp; Hitung Premi"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
 
-            <Button
-                android:id="@+id/btnSimpanPanen"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="28dp"
-                android:backgroundTint="#15803D"
-                android:text="Simpan &amp; Hitung Premi"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:cornerRadius="8dp" />
-
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>
