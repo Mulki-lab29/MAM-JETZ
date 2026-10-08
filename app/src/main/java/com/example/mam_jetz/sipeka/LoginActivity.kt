@@ -2,24 +2,25 @@ package com.example.mam_jetz.sipeka
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mam_jetz.R
+import com.example.mam_jetz.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityLoginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
 
-        // Mengubungkan tombol di XML dengan logika Kotlin
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnLogin?.setOnClickListener {
+        // Menghubungkan tombol di XML dengan logika Kotlin
+        binding.btnLogin.setOnClickListener {
             // Pindah dari LoginActivity ke DashboardActivity
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, DashboardActivity::class.java))
             finish() // Menutup LoginActivity agar tidak bisa di-back
         }
     }
