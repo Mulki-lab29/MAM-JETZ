@@ -20,11 +20,11 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan_3.ThirdActivity"
+            android:name=".snack_jetz.JetzActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"></activity>
         <activity
-            android:name=".pertemuan_3.ThirdResultActivity"
+            android:name=".snack_jetz.JetzResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity

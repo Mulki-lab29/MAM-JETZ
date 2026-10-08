@@ -1,8 +1,7 @@
-package com.example.mam_jetz.pertemuan_3
+package com.example.mam_jetz.snack_jetz
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mam_jetz.R
 import com.example.mam_jetz.databinding.ActivityThirdBinding
 
-class ThirdActivity : AppCompatActivity() {
+class JetzActivity : AppCompatActivity() {
     private lateinit var binding: ActivityThirdBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +30,7 @@ class ThirdActivity : AppCompatActivity() {
 //        val btnSubmit: Button = findViewById(R.id.btnKirim)
 
         binding.btnKirim.setOnClickListener {
-            val intent = Intent(this, ThirdResultActivity::class.java)
+            val intent = Intent(this, JetzResultActivity::class.java)
             startActivity(intent)
 
             //Mengambil value dari inputNama dan menampilkan di Logcat
