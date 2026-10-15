@@ -150,5 +150,27 @@
         app:iconGravity="textStart"
         app:iconPadding="10dp"
         app:iconTint="#FFFFFF" />
+    <!-- Tombol Menu Developer -->
+    <Button
+        android:id="@+id/btnMenuDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0284C7"
+        android:text="Tentang Developer"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <!-- Tombol Logout menggunakan Button standar -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#DC2626"
+        android:text="Logout / Keluar"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
