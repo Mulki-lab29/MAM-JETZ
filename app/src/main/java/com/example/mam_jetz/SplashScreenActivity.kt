@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
+import com.example.mam_jetz.sipeka.BaseActivity
 import com.example.mam_jetz.sipeka.DashboardActivity
 import com.example.mam_jetz.sipeka.LoginActivity
 import kotlinx.coroutines.delay
@@ -31,7 +32,7 @@ class SplashScreenActivity : AppCompatActivity() {
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
             val intent = if (isLogin) {
-                Intent(this@SplashScreenActivity, DashboardActivity::class.java)
+                Intent(this@SplashScreenActivity, BaseActivity::class.java)
             } else {
                 Intent(this@SplashScreenActivity, LoginActivity::class.java)
             }

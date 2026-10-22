@@ -27,7 +27,6 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
 
-            // Validasi sederhana (pastikan komponen id edtEmail dan edtPassword sesuai dengan xml-mu)
             if (email.isNotEmpty() && password.isNotEmpty()) {
 
                 // --- IMPLEMENTASI LANGKAH 3: SIMPAN STATUS LOGIN KE SHAREDREFERENCES ---
