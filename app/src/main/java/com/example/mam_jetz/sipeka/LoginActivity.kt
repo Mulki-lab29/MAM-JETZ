@@ -43,5 +43,10 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Email dan Password tidak boleh kosong!", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.btnRegisterGmail.setOnClickListener {
+            // Arahkan ke Activity/Halaman Input Email
+            val intent = Intent(this, RegisterEmailActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
