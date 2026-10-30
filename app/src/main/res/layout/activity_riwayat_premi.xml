@@ -150,7 +150,12 @@
                     android:textColor="#64748B"
                     android:textSize="13sp" />
             </LinearLayout>
-
+            <Button
+                android:id="@+id/btnPrintPdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cetak &amp; Share Slip Gaji (PDF)"
+                android:layout_margin="16dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
