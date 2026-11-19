@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mam_jetz.databinding.ActivityLoginBinding
+import com.example.mam_jetz.sipeka.tutorial.TutorialSipekaActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -36,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
                 editor.apply()
 
                 // Pindah dari LoginActivity ke DashboardActivity
-                startActivity(Intent(this, DashboardActivity::class.java))
+                startActivity(Intent(this, TutorialSipekaActivity::class.java))
                 finish() // Menutup LoginActivity agar tidak bisa di-back
 
             } else {

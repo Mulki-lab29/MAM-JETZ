@@ -35,6 +35,11 @@ android {
 }
 
 dependencies {
+    // Tambahkan ini untuk Onboard DotsIndicator (Modul Pertemuan 11)
+    implementation("com.tbuonomo:dotsindicator:5.1.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    // Pastikan RecyclerView ada (kalau belum ada, tambahkan ini juga)
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

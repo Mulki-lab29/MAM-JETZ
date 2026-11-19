@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEB"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="Ikon Slip PDF"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Cetak Slip &amp; Kirim WhatsApp"
+        android:textColor="#78350F"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Ekspor rekap slip gaji pemanen menjadi dokumen PDF resmi dan bagikan langsung ke WhatsApp dalam sekali klik."
+        android:textColor="#475569"
+        android:textSize="14sp" />
+
+</LinearLayout>
